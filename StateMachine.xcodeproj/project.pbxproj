@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		828B3AF86F57644849E88427 /* libPods-StateMachine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3B91D58B4BD98F731453BD /* libPods-StateMachine.a */; };
 		9C51951C1F4EB1B700D4973F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C51951B1F4EB1B700D4973F /* main.m */; };
 		9C51951F1F4EB1B700D4973F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C51951E1F4EB1B700D4973F /* AppDelegate.m */; };
 		9C5195221F4EB1B700D4973F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5195211F4EB1B700D4973F /* ViewController.m */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21C2FE19DE5BCCFE0607368C /* Pods-StateMachine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StateMachine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StateMachine/Pods-StateMachine.debug.xcconfig"; sourceTree = "<group>"; };
 		9C5195171F4EB1B700D4973F /* StateMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C51951B1F4EB1B700D4973F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9C51951D1F4EB1B700D4973F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		9C5195261F4EB1B700D4973F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C5195291F4EB1B700D4973F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C51952B1F4EB1B700D4973F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0D8A4F30ED7BBF936202223 /* Pods-StateMachine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StateMachine.release.xcconfig"; path = "Pods/Target Support Files/Pods-StateMachine/Pods-StateMachine.release.xcconfig"; sourceTree = "<group>"; };
+		EC3B91D58B4BD98F731453BD /* libPods-StateMachine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StateMachine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				828B3AF86F57644849E88427 /* libPods-StateMachine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84A4CB35FDE3CE4549624D60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21C2FE19DE5BCCFE0607368C /* Pods-StateMachine.debug.xcconfig */,
+				A0D8A4F30ED7BBF936202223 /* Pods-StateMachine.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		90B2E2FA82299CBAD591A8E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC3B91D58B4BD98F731453BD /* libPods-StateMachine.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9C51950E1F4EB1B600D4973F = {
 			isa = PBXGroup;
 			children = (
 				9C5195191F4EB1B700D4973F /* StateMachine */,
 				9C5195181F4EB1B700D4973F /* Products */,
+				84A4CB35FDE3CE4549624D60 /* Pods */,
+				90B2E2FA82299CBAD591A8E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C51952E1F4EB1B700D4973F /* Build configuration list for PBXNativeTarget "StateMachine" */;
 			buildPhases = (
+				2E1292BD525C29060C2B0A8F /* [CP] Check Pods Manifest.lock */,
 				9C5195131F4EB1B600D4973F /* Sources */,
 				9C5195141F4EB1B600D4973F /* Frameworks */,
 				9C5195151F4EB1B600D4973F /* Resources */,
+				A6459CC9E703F063715C96F4 /* [CP] Embed Pods Frameworks */,
+				5AE1770662854C2B89E67135 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E1292BD525C29060C2B0A8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5AE1770662854C2B89E67135 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StateMachine/Pods-StateMachine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6459CC9E703F063715C96F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StateMachine/Pods-StateMachine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9C5195131F4EB1B600D4973F /* Sources */ = {
@@ -269,6 +344,7 @@
 		};
 		9C51952F1F4EB1B700D4973F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C2FE19DE5BCCFE0607368C /* Pods-StateMachine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9CQMS674H8;
@@ -281,6 +357,7 @@
 		};
 		9C5195301F4EB1B700D4973F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0D8A4F30ED7BBF936202223 /* Pods-StateMachine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9CQMS674H8;
